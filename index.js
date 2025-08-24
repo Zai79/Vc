@@ -15,7 +15,7 @@ app.listen(port, () => {
   console.log(`🌐 Web server running on port ${port}`);
 });
 
-// معالجات الأخطاء
+// Error handling
 process.on("uncaughtException", (err) => {
   console.error(`❌ Uncaught Exception: ${err.message}`);
 });
